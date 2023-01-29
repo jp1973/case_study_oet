@@ -10,7 +10,9 @@ def download_file(URL):
 
 
 def run_analysis(URL):
-    download_file(URL) """ Downloading file"""
+    """ Downloading file"""
+    download_file(URL)
+    """ Initialize spark"""
     spark = SparkSession.builder \
         .master("local[1]") \
         .appName("PySpark Read JSON") \
