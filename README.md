@@ -1,4 +1,4 @@
-#The code
+# The code
 
 In order to run the code, do the following:
 
@@ -11,7 +11,7 @@ In order to run the code, do the following:
       "sudo docker run --mount type=bind,source="$(pwd)",target=/opt/application pyspark-example:dev driver local:///opt/application/main.py "
 
 
-#The delivery pipeline
+# The delivery pipeline
 Just as I familiar with AWS, I decided to use AWS ECS(AWS docker environemnt) to run this application 
 
 For the sake of cloud-agnosticism delivery pipeline is build around Github actions, which allows to maintain muti-cloud application. There is a set of ready gitgub actions which allwos to deploy docker application to AWS ECS. More could be found on this link
