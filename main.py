@@ -1,6 +1,8 @@
 from requests import get
 from pyspark.sql import SparkSession
 
+# useles comment
+
 def download_file(URL):
     """ downloading file is separated into another function for the sake of better code understanding and maintainability"""
     url = URL
